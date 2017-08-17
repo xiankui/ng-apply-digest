@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html ng-app="app">
+<head>
+	<meta charset="UTF-8">
+	<title>understand apply and digest</title>
+</head>
+<body>
+	<div ng-controller="MyController">
+
+		<input ng-model="name" type="text" placeholder="Your name">
+		<h1>hello {{ name }}</h1>
+
+		<example-directive></example-directive>
+
+		<clickable foo="foo" bar="bar"></clickable>
+		
+	</div>
+	<script src="angular.js"></script>
+	<script src="index.js"></script>
+</body>
+</html>
